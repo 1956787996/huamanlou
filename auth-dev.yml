@@ -7,16 +7,16 @@ spring:
         default-property-inclusion: non_null
     redis:
         database: 1
-        host: ${REDIS_HOST:119.29.177.16}
+        host: ${REDIS_HOST:127.0.0.1}
         port: ${REDIS_PORT:6379}
-        password: ${REDIS_PASSWORD:itparking_redis}
+        password: 
         pool:
             max-active: 20
     datasource:
       name: test
-      url: jdbc:mysql://119.29.177.16:3306/ag_auth?useUnicode=true&characterEncoding=UTF8
+      url: jdbc:mysql://127.0.0.1:3306/ag_auth?useUnicode=true&characterEncoding=UTF8
       username: root
-      password: boskPark_mysql
+      password: 123456
       # 使用druid数据源
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.jdbc.Driver
